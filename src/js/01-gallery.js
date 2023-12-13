@@ -75,6 +75,7 @@ const markup = images.map(
   (image) => `<li class="gallery-item">
       <a class="gallery-link" href="${image.original}">
           <img 
+          style="width:360px; height: 200px"
               class="gallery-image" 
               src="${image.preview}" 
               alt="${image.description}" 
