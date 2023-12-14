@@ -1,32 +1,3 @@
-// const FEEDBACK_MESSAGE_KEY = "feedback-form-state";
-
-// const emailForm = document.querySelector(".feedback-form");
-// const inputEmail = emailForm.querySelector("input");
-// const textarea = emailForm.querySelector("textarea");
-
-// const initiaMessage = localStorage.getItem(FEEDBACK_MESSAGE_KEY);
-
-// if (initiaMessage) {
-//     textarea.value = initiaMessage;
-// }
-
-
-// emailForm.addEventListener("submit", (event) => {
-//     event.preventDefault()
-//     localStorage.removeItem(FEEDBACK_MESSAGE_KEY);
-
-//     form.reset()
-// })
-
-// textarea.addEventListener("input", (event) => {
-//     const message = event.target.value;
-//     localStorage.setItem (FEEDBACK_MESSAGE_KEY, message)
-// })
-// inputEmail.addEventListener("input", (event) => {
-//     const message = event.target.value;
-//     localStorage.setItem (FEEDBACK_MESSAGE_KEY, message)
-// })
-
 
 const FEEDBACK_FORM_KEY = "feedback-form-state";
 const feedbackForm = document.querySelector(".feedback-form");
@@ -46,6 +17,7 @@ const saveFormData = () => {
   };
   localStorage.setItem(FEEDBACK_FORM_KEY, JSON.stringify(formData));
 };
+ 
 
 const handleFormSubmit = (event) => {
   event.preventDefault();
